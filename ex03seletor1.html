@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 전체 선택자 (기호: * ) */
+        *{
+            color: green;
+        }
+        /* 2. 태그 선택자 (기호: 태그이름) */
+        p{
+            color: lightseagreen;
+        }
+        li{
+            font-size: 50px;
+        }
+        /* 3. 클래스 선택자 (기호: .) */
+        .idol{
+            color: sandybrown;
+        }
+        /* 4. 아이디 선택자 (기호: #) */
+        #nolucksis{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <h1 class="idol">당신의 아이돌에 투표하세요!</h1>
+    <ol>
+        <li class="idol" id="wannaone">워너원</li>
+        <li class="idol" id="X1">엑스원</li>
+        <!-- 클래스 여러개 지정할 때는 공백으로 구별 -->
+        <li class="idol top" id="nolucksis">꽝자매</li>
+    </ol>
+
+    <!-- id는 한번만 지정!  -->
+    <script>
+        document.getElementById("nolucksis").onmouseup = function(){
+            alert("id가 꽝자매")
+        }
+    </script>
+</body>
+</html>
